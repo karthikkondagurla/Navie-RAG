@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.env
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Application Data
+backend/data/*.pdf
+# Keep the directory structure but ignore content except if we want to keep the specific sample
+# We will just ignore all pdfs in data for now to avoid leaking user docs
+backend/data/*.index
+backend/data/*.pkl
+
+# Ignore clean models for now if they are large artifacts (looks like text list though)
+# models_list.txt seems small.
